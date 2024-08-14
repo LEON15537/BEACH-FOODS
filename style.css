@@ -1,0 +1,297 @@
+nav{
+    height: 80px;
+    background-color: transparent(38, 192, 38);
+    width: 100%;
+    display: flex;
+
+}
+nav ul {
+    margin-top: 30px;
+}
+#logo{
+    height: 80px;
+    top: 0px;
+
+}
+nav ul li a:hover{
+    display: inline;
+    text-decoration: none;
+padding: 30px 0 0 20px;
+
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 30px 0 0 40px;
+}
+#btn{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+}
+#pic{
+    
+    height: 50%;
+    object-fit: contain;
+}
+.pic-container{
+    
+    width: 100%;
+    height: 450px;
+    display: flex;
+    
+}
+#picture{
+    width: 50%;
+    
+    height: 450px;
+}
+#pic-1{
+    width: 100%;
+    height: 450px;
+}
+#Welcome{
+    font-size: 5rem;
+    margin-left: 60px;
+    color: rgb(134, 61, 61);
+    font-family:  "Grey Qo", cursive;
+    font-weight: 700;
+    padding-left: 50px;
+    
+}
+#Btn{
+    padding: 10px;
+    margin-left: 240px;
+    border-radius: 10px;
+    background-color:rgb(73, 61, 134);
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+
+}
+#Btn:hover{
+    background-color: white;
+    border: 1px solid rgb(134, 61, 61) ;
+    color: rgb(134, 61, 61);
+    transition: 1000ms;
+}
+#par{
+    font-size: 1.5rem;
+    padding-left: 40px;
+    font-family:"Open Sans", sans-serif ;
+}
+#covered{
+    padding-left: 200px;
+}
+#Bk{
+    margin-left: 100px;
+    font-family:"Matemasie", sans-serif ;
+    font-size: 4rem;
+    color:  rgb(61, 134, 62)
+}
+
+/* contact form code */
+
+
+
+
+/* Contact Form Container */
+.contact-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 40px 0 0 400px;
+}
+
+/* Contact Form */
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: rgb(134, 61, 61);
+    text-align: center;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: rgb(61, 134, 82);
+    outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(60, 135, 75);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(60, 135, 75)
+}
+
+/* Existing CSS remains unchanged */
+
+/* Add media queries below to handle responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto; /* Adjust height for vertical layout */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .pic-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #picture, #Moto {
+        width: 100%; /* Make them full width on small screens */
+        height: auto;
+    }
+
+    #Welcome {
+        font-size: 3rem;
+        text-align: center;
+        padding-left: 0;
+    }
+    #covered{
+    padding-left: 100px;
+    }
+
+    #Btn {
+        padding-left: 10px;
+        width: 80%;
+        display: block;
+        margin: 20px auto;
+        background-color: rgb(134, 61, 61);
+
+    }
+
+    #par {
+        text-align: center;
+        padding-left: 0;
+        font-size: 20px;
+    }
+
+    #Bk {
+        text-align: center;
+        margin-left: 0;
+        font-size: 3rem;
+    }
+
+    .contact-form-container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+    #Bk{
+        margin-left: 20px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #Welcome {
+        font-size: 2.5rem;
+    }
+
+    #Btn {
+        width: 100%;
+    }
+
+    .contact-form-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    nav img {
+        height: 80px; /* Smaller logo on tablets */
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+
+    }
+    #Bk{
+        margin-left: 20px;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Slightly smaller text */
+        padding: 20px;
+    }
+}
+footer{
+    background-color:rgb(134, 61, 61) ;
+    height: 60px;
+    width: 100%;
+    padding-top: 10px;
+}
